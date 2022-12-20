@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Brevia-Bold";
+    src: url(../assets/fonts/Brevia-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Brevia-Regular";
+    src: url(../assets/fonts/Brevia-Regular.ttf);
+}
+
+:root {
+    --font-bold: "Brevia-Bold", sans-serif;
+    --font-regular: "Brevia-Regular", sans-serif;
+    --pink: #fd6268;
+    --yellow: #fcd046;
+    --yellow-dark: #d0606e;
+    --gray: #e9eaeb;
+    --white: #FFF;
+    --black: #000;
+}

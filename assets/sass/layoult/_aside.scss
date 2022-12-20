@@ -1,0 +1,203 @@
+.aside {
+    display: grid;
+    grid-template-areas: 
+    "list"
+    "alert"
+    "premium";
+    grid-template-rows: 3fr 1fr 1fr;
+
+    &__list {
+        background-color: var(--pink);
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        grid-area: list;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        a {
+            color: var(--white);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item:nth-child(1) {
+        height: 40%;
+    }
+
+    &__item:first-child a{
+        background-color: var(--white);
+        background-image: url(../../../assets/images/steven/linkedin-rosa.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 4rem;
+        border-radius: 1rem;
+
+        display: block;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    &__item:nth-child(2) {
+        height: 20%;
+    }
+
+    &__item:nth-child(3) {
+        height: 20%;
+    }
+
+    &__item:nth-child(4) {
+        height: 20%;
+    }
+
+    &__item:not(:first-child) {
+        border-top: 1px solid var(--white);
+    }
+
+    &__item:nth-child(2) a::before{
+        content: "";
+        background-image: url(../../../assets/images/casa.svg);
+        background-size: 1.2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid var(--gray);
+        border-radius: 50%;
+
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    &__item:nth-child(3) a::before{
+        content: "";
+        background-image: url(../../../assets/images/pessoas.svg);
+        background-size: 1.2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid var(--gray);
+        border-radius: 50%;
+
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    &__item:nth-child(4) a::before{
+        content: "";
+        background-image: url(../../../assets/images/vagas.svg);
+        background-size: 1.2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid var(--gray);
+        border-radius: 50%;
+
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    &__alert {
+        grid-area: alert;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn{
+        background-color: var(--white);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid var(--pink);
+        border-radius: 50%;
+
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+
+        position: relative;
+
+        &::before {
+            content: "2";
+            background-color: red;
+            border: 2px solid var(--white);
+            border-radius: 50%;
+            color: var(--white);
+            font-size: .7rem;
+            font-family: var(--font-bold);
+
+            display: inline-block;
+            width: 1.2rem;
+            height: 1.2rem;
+
+            position: absolute;
+            top: -10%;
+            right: -10%;
+        }
+    }
+
+
+
+    &__btn:first-child {
+        background-image: url(../../../assets/images/anuncio.svg);
+        background-size: 1.2rem;
+
+        margin-bottom: 1rem;
+    }
+
+    &__btn:last-child {
+        background-image: url(../../../assets/images/mensagens.svg);
+        background-size: 1.2rem;
+    }
+
+    &__premium {
+        background-color: var(--yellow);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        grid-area: premium;
+    }
+
+    &__title {
+        font-size: 1.3rem;
+        font-style: italic;
+        text-transform: uppercase;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title::before {
+        content: "";
+        background-color: var(--yellow-dark);
+        background-image: url(../../../assets/images/steven/premium.svg);
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+
+        display: inline-block;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-bottom: 1.5rem;
+    }
+}

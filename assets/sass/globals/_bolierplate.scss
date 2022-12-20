@@ -1,0 +1,38 @@
+html {
+    // definições default da página
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    // definições default da página
+    box-sizing: inherit;
+}
+
+body {
+    // definições default da página
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-bold);
+
+    // grid
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "aside head head head"
+    "aside main main main";
+    grid-template-columns: .4fr 1fr 1fr 1fr;
+    grid-template-rows: 1.2fr 1.8fr;
+}
+
+header {
+    grid-area: head;
+}
+
+aside {
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+}

@@ -1,0 +1,31 @@
+.main {
+    background-color: var(--gray);
+
+    position: relative;
+
+    &__card {
+        background-color: var(--white);
+        border-radius: 2rem;
+
+        width: 25%;
+        height: 100%;
+
+        position: relative;
+        left: 3%;
+        top: -20%;
+    }
+
+    &__img {
+        background-color: red;
+        border: 5px solid var(--white);
+        border-radius: 50%;
+        box-shadow:  0 0;
+
+        width: 13rem;
+        height: 13rem;
+
+        position: absolute;
+        left: 25%;
+        top: -13%;
+    }
+}
