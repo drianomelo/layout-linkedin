@@ -23,6 +23,8 @@ body {
     "aside main main main";
     grid-template-columns: .4fr 1fr 1fr 1fr;
     grid-template-rows: 1.2fr 1.8fr;
+
+    overflow: hidden;
 }
 
 header {
